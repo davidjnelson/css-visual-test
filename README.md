@@ -152,9 +152,11 @@ Future Goals ( Pull Requests Appreciated! )  :-)
 - Add a file system watcher to regenerate the component library when css, js, and templates are changed.
 - Add an integration test using the local only run feature.
 - Add a functional test using Sauce Labs And Applitools.
-- Group all components into a single page which is used for batch diffing the components with links to each individual page still.
+- Group all components into a single page which is used for batch diffing the components with links to each individual page still.  Unfortunately, it doesn't look this this is a viable approach from Chrome ( https://code.google.com/p/chromedriver/issues/detail?id=294 ).  According to ( https://bugsnag.com/blog/implementing-a-visual-css-testing-framework ) it also doesn't work in IE, but it does work in Firefox.  Who knows about ios and osx safari and the android stock browser.  There is a workaround which would be to scroll the page and stitch sections of screenshots together.
 - Create a shared layout wrapper component for each component on the index grouped page, host this as it’s own npm project to allow selective upgrades.
 - For the react / commonjs example, load react from the host pages while still making them work from the require calls, to speed generation time of the component library.
 - Add a feature where you can have less vms than selenium environments in case you want to run many os / browser / device combos but not pay for a ton of parallel vms.
 - Change the time estimation calculation to account for vm startup time, which is what takes the longest.
 - Add a debug or local mode where if a sauce connect tunnel is already open it doesn’t try to reopen it
+- Add instructions in the readme for how to run on ci.
+- Describe the architecture in a wiki article linked to in the readme.
