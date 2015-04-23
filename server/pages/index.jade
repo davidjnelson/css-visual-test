@@ -1,0 +1,16 @@
+doctype html
+html(lang=lang, dir=isRTL ? 'rtl' : 'ltr')
+	head
+		title CSS Visual Test
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(name='fomat-detection', content='telephone=no')
+		meta(name='mobile-web-app-capable', content='yes')
+		link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:700,300,700italic,300italic')
+		if isRTL
+			link(rel='stylesheet', href=urls['style-rtl.css'])
+		else
+			link(rel='stylesheet', href=urls['style.css'])
+	body(class=isRTL ? 'rtl' : '')
+		#root
+			script(src=urls[ 'build.js'])

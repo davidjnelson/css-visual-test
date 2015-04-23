@@ -1,0 +1,9 @@
+
+.DS_Store
+.idea
+node_modules
+/npm-debug.log
+
+css-visual-test/component-library/
+css-visual-test/ApplitoolsEyesParallelDebug.log
+css-visual-test/lib/PrivateConfig.js
