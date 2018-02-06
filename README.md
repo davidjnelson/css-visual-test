@@ -6,12 +6,6 @@ Overall Goal
 
 How do we know that if css changes for all the components comprising an application, that the application looks as expected for every state mutation the application supports?
 
-Sponsored By
-------------
-
-[Copy the Shrug Emoji](https://copyshrugemoji.com)
-==================================================
-
 Usage
 -----
 
